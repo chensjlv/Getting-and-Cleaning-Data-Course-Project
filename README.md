@@ -4,7 +4,7 @@ This code is part of the course project for Cousera course [Getting and Cleaning
 
 ## How to use the code
 
-Make sure you have all the dependant librarie installed before you run this code.
+Make sure you have all the dependant libraries installed before you run this code.
 
 Library dependencies (required):
 
