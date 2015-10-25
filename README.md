@@ -28,7 +28,7 @@ The code generate the analysis in the following steps:
 5. Finally, we use dplyr to group the data by subjectId and activity, and produce the average of each variable
 6. Write the result to **summary.txt** in your workspace
 
-The output looks like this:
+The dataframe form of the output looks like this:
 
 ```
    subjectID         activity tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z tBodyAcc-std()-X
