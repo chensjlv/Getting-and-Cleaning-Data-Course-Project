@@ -1,7 +1,12 @@
 library(dplyr)
+args <- commandArgs(trailingOnly = TRUE)
 
 ## folder of the data set
-dataFolder <- 'UCI HAR Dataset'
+if (length(args) > 0) {
+  dataFolder <- args[1]
+} else {
+  dataFolder <- 'UCI HAR Dataset'
+}
 
 ## load in the feature data, and extracts only the measurements on the mean and standard deviation
 featureDf <- read.csv(file.path(dataFolder, 'features.txt'), sep = '', header = FALSE, col.names = c('index', 'feature'))
