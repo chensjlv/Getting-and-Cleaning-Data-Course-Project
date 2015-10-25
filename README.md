@@ -23,7 +23,7 @@ The code generate the analysis in the following steps:
 
 1. Load in the feature data from **features.txt**, and extracts only the features on the mean and standard deviation. The feature data is stored in variable **featureDf**
 2. Activity data is read from **activity_labels.txt** and loaded into variable **activityDf** in order to label the activity name later
-3. A function **buildDataset** is defined for cleaning and merging feature, activity, and observation data. The function take in partiton (**train** or **test**) as the first argument along with **featureDf** and **activityDf**, and process that partition
+3. A function **buildDataset** is defined for cleaning and merging feature, activity, and observation data. The function take in partiton (**train** or **test**) as the first argument along with **featureDf** and **activityDf**, and return merged dataframe
 4. **buildDataset** function is called seperately for **test** and **train** data, and the results are merged back to **finalDf**
 5. Finally, we use dplyr to group the data by subjectId and activity, and produce the average of each variable
 6. Write the result to **summary.txt** in your workspace
